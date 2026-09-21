@@ -1,3 +1,216 @@
-<h1>Lawrence Yu</h1>
-<break>
-<p>Welcome to my page!</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lawrence Yu | Full-Stack ML Engineer & Data Scientist</title>
+    <style>
+        :root {
+            --bg-color: #f6f8fa;
+            --container-bg: #ffffff;
+            --text-main: #24292e;
+            --text-muted: #586069;
+            --primary-accent: #0366d6;
+            --success-green: #2ea44f;
+            --border-color: #e1e4e8;
+            --tag-bg: #f1f8ff;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+            color: var(--text-main);
+            background-color: var(--bg-color);
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 0;
+            border-bottom: 1px solid var(--border-color);
+            background: var(--container-bg);
+            border-radius: 6px 6px 0 0;
+            border: 1px solid var(--border-color);
+            border-bottom: none;
+        }
+
+        h1 { margin: 0 0 5px 0; font-size: 2.5rem; color: var(--text-main); }
+        .subtitle { font-size: 1.3rem; color: var(--text-muted); font-weight: 400; margin: 0 0 15px 0; }
+        
+        .contact-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .contact-links a {
+            color: var(--primary-accent);
+            text-decoration: none;
+            font-size: 0.95rem;
+        }
+        .contact-links a:hover { text-decoration: underline; }
+
+        main {
+            background: var(--container-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 0 0 6px 6px;
+            padding: 40px;
+        }
+
+        h2 {
+            color: var(--text-main);
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 8px;
+            margin-top: 35px;
+            font-size: 1.5rem;
+        }
+        h2:first-of-type { margin-top: 0; }
+
+        .skills-list {
+            margin: 0;
+            padding-left: 20px;
+        }
+        .skills-list li { margin-bottom: 8px; }
+
+        .project-card {
+            background: var(--bg-color);
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            padding: 24px;
+            margin-top: 20px;
+        }
+        .project-card h3 { margin: 0 0 10px 0; color: var(--primary-accent); }
+        .tech-tags { margin: 12px 0; }
+        .tag {
+            font-size: 0.85rem;
+            background: var(--tag-bg);
+            color: var(--primary-accent);
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-weight: 500;
+            margin-right: 6px;
+            display: inline-block;
+        }
+
+        .experience-item {
+            margin-bottom: 30px;
+        }
+        .exp-header {
+            display: flex;
+            justify-content: space-between;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .exp-title { color: var(--text-muted); font-style: italic; font-weight: 500; margin-bottom: 10px; }
+        .exp-bullets { padding-left: 20px; margin: 0; }
+        .exp-bullets li { margin-bottom: 6px; }
+
+        .btn {
+            display: inline-block;
+            background: var(--success-green);
+            color: white;
+            padding: 8px 16px;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 600;
+            margin-top: 10px;
+            font-size: 0.9rem;
+        }
+        .btn:hover { background-color: #2c974b; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Lawrence Yu</h1>
+        <p class="subtitle">Full-Stack ML Engineer & Data Scientist</p>
+        <div class="contact-links">
+            <a href="mailto:Lawrence.W.Yu@gmail.com">📩 Lawrence.W.Yu@gmail.com</a>
+            <a href="https://linkedin.com" target="_blank">🔗 LinkedIn Portfolio</a>
+            <a href="https://github.com" target="_blank">💻 GitHub Profile</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>Professional Profile</h2>
+            <p>
+                Data Scientist and Machine Learning Engineer with 7+ years of enterprise software development experience. 
+                Expert at blending deep statistical workflows with robust production-level software architecture to deliver complete, 
+                user-facing data products.
+            </p>
+            <ul class="skills-list">
+                <li><strong>Languages:</strong> Python, R, SQL, JavaScript (ES6+), TypeScript, Dart, Java, PHP</li>
+                <li><strong>Modeling & Analytics:</strong> Random Survival Forests, Cox PH Calibration, Regressions, Time Series (ARIMA), NLP</li>
+                <li><strong>Frameworks & Tools:</strong> React, Vue, Fastify, Node.js, Flutter, Scikit-Learn, Pandas</li>
+                <li><strong>Cloud & MLOps:</strong> Docker, AWS (S3/EC2), CI/CD (Jenkins, GitHub Actions), PostgreSQL, MongoDB</li>
+            </ul>
+        </section>
+
+        <section id="projects">
+            <h2>Featured Machine Learning Deployments</h2>
+            <div class="project-card">
+                <h3>Prescriptive Analytics: Heart Disease Survival Modeling</h3>
+                <p>Designed and launched an end-to-end cloud web application integrating a Random Survival Forest machine learning model with a Cox PH calibration layer to process time-to-event datasets in real time.</p>
+                <div class="tech-tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">Scikit-Learn</span>
+                    <span class="tag">Docker</span>
+                    <span class="tag">Hugging Face Spaces</span>
+                    <span class="tag">Joblib Serialization</span>
+                </div>
+                <a href="https://huggingface.co" target="_blank" class="btn">Launch Live Demo</a>
+            </div>
+        </section>
+
+        <section id="experience">
+            <h2>Professional Experience</h2>
+            
+            <div class="experience-item">
+                <div class="exp-header">
+                    <span>Trackforce Valiant (TrackTik & theEMPLOYEEapp)</span>
+                    <span>2021 – 2023</span>
+                </div>
+                <div class="exp-title">Software Engineer</div>
+                <ul class="exp-bullets">
+                    <li>Optimized system data delivery mechanics by constructing high-throughput REST API endpoints and migrating legacy backend services to Fastify.</li>
+                    <li>Engineered custom client pagination logic to navigate complex backend payload transfers, dropping compute stress on production servers.</li>
+                    <li>Designed core UI/UX modules using Vue and React Native to filter, visualize, and present live runtime tracking logs to operational end users.</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="exp-header">
+                    <span>Information Builders Inc. (IBI)</span>
+                    <span>2017 – 2021</span>
+                </div>
+                <div class="exp-title">Flutter Mobile App Developer & Software Engineer in Test</div>
+                <ul class="exp-bullets">
+                    <li>Built an intelligent interface parsing input streams through an Natural Language Query (NLQ) API server to visualize live relational query metrics inside graphic engine charts.</li>
+                    <li>Architected distributed testing infrastructure engines combining automated Python configurations across Jenkins nodes and Docker runtimes.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            <div class="experience-item" style="margin-bottom: 0;">
+                <div class="exp-header">
+                    <span>CUNY School of Professional Studies</span>
+                    <span>June 2026</span>
+                </div>
+                <div class="exp-title">Master of Science in Data Science</div>
+                
+                <div class="exp-header" style="margin-top: 15px;">
+                    <span>CUNY Hunter College</span>
+                    <span>Cum Laude</span>
+                </div>
+                <div class="exp-title">Bachelor of Science in Computer Science (Departmental Honors)</div>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>
